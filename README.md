@@ -1,8 +1,10 @@
 # Mini fair zip file 
 Zip files for mini fair 
-V 0.1  
+[V 0.1](https://github.com/AmnestyAM/mini-fair-zip/blob/main/mini-fair-V-0-1.zip)     
 
 Commiting here with "zip-it" in the comment should build a zip file from the [min-fair repo ](https://github.com/fairpm/mini-fair-repo) using this [github workflow](https://github.com/AmnestyAM/mini-fair-zip/blob/main/.github/workflows/main.yml) and action.   
+
+# Mini fair playground link 
 
 There is also a [WordPress Play Gound](https://wordpress.org/playground/) that uses this [blue print](https://github.com/AmnestyAM/mini-fair-zip/blob/main/blueprint.json) that should show the latest zip file we have for the [min-fair repo ](https://github.com/fairpm/mini-fair-repo).   
  
