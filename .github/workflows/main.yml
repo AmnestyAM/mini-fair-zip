@@ -1,0 +1,57 @@
+name: Zip and Commit
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  zip:
+    if: contains(github.event.head_commit.message, 'zip-it')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Checkout mini-fair-repo
+        uses: actions/checkout@v4
+        with:
+          repository: fairpm/mini-fair-repo
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: mini-fair-repo
+          fetch-depth: 1
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          tools: composer
+
+      - name: Install dependencies
+        working-directory: mini-fair-repo
+        run: composer install --no-dev --prefer-dist --no-progress --no-interaction
+
+      - name: Create ZIP file
+        working-directory: mini-fair-repo
+        run: |
+          ZIP_NAME=mini-fair.zip
+          echo "Removing old $ZIP_NAME if present..."
+          rm -f "../$ZIP_NAME"
+          echo "Zipping mini-fair-repo into ../$ZIP_NAME..."
+          zip -r "../$ZIP_NAME" . \
+            -x ".git/*" \
+            -x ".github/*" \
+
+      - name: Commit ZIP file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add mini-fair.zip
+          git commit -m "Update mini-fair.zip on push to main" || echo "No changes to commit"
+          git push
