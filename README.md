@@ -14,4 +14,4 @@ There is also a [WordPress Play Gound](https://wordpress.org/playground/) that u
  
 When a new version if release we will save the zip here (while they dont have releases) and update the playgound link for the older versions such as [Verson 0.1](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/amnestyam/mini-fair-repo/refs/heads/main/blueprint-v-0-1.json).   
 
-I hope this is helpfull even thought it probably wont work! Maybe someone will come along and fork it! :-)   
+I hope this is helpfull even thought it probably wont work! Maybe someone will come along and fork it! :-)      
