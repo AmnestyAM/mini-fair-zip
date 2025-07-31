@@ -10,7 +10,7 @@ Commiting here with "zip-it" in the comment should build a zip file from the [mi
 
 # Mini fair playground link 
 
-There is also a [WordPress Play Gound](https://wordpress.org/playground/) that uses this [blue print](https://github.com/amnestyam/mini-fair-zip/blob/main/blueprint.json) that should show the latest zip file we have for the [min-fair repo ](https://github.com/fairpm/mini-fair-repo). There is also a debug [blue print](https://github.com/amnestyam/mini-fair-zip/blob/main/debug.json) that should show the with de bug set to true and quiery monitor installed. 
+There is also a [WordPress Play Gound](https://wordpress.org/playground/) that uses this [blue print](https://github.com/amnestyam/mini-fair-zip/blob/main/blueprint.json) that should show the latest zip file we have for the [min-fair repo ](https://github.com/fairpm/mini-fair-repo). There is also a debug [blue print](https://github.com/amnestyam/mini-fair-zip/blob/main/debug.json) that should show the with de bug set to true and quiery monitor installed [debug](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/amnestyam/mini-fair-zip/refs/heads/main/debug.json).
  
 When a new version if release we will save the zip here (while they dont have releases) and update the playgound link for the older versions such as [Verson 0.1](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/amnestyam/mini-fair-zip/refs/heads/main/blueprint-v-0-1.json).   
 
