@@ -1,5 +1,5 @@
 # Mini FAIR - Zip & playground 
-
+Get zip files for mini fair and links to the playgound bluep prints. 
 
 # Mini fair zip file 
 Zip files for mini fair 
