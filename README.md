@@ -19,4 +19,4 @@ I hope this is helpfull even thought it probably wont work! Maybe someone will c
 
 # FAIR parent theme playground link 
 
-[FAIR parent theme](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/amnestyam/mini-fair-zip/refs/heads/main/fair-parent-theme-blueprint.json
+[FAIR parent theme](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/amnestyam/mini-fair-zip/refs/heads/main/fair-parent-theme-blueprint.json)
