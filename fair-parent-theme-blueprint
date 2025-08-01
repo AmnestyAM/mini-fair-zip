@@ -1,6 +1,10 @@
 {
-  "landingPage": "/wp-admin/",
+  "landingPage": "/wp-admin/themes.php",
   "login": true,
+  "preferredVersions": {
+    "php": "7.4",
+    "wp": "6.6"
+  },
   "features": {
     "networking": true
   },
@@ -28,8 +32,12 @@
     },
     {
       "step": "mv",
-      "fromPath": "/tmp/fair-parent-theme/",
+      "fromPath": "/tmp/fair-parent-theme/fair-parent-theme-1.0.0",
       "toPath": "/wordpress/wp-content/themes/fair-parent-theme"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp theme activate fair-parent-theme"
     },
     {
       "step": "installPlugin",
