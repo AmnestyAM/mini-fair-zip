@@ -1,6 +1,6 @@
 # Mini FAIR - Zip & playground 
 Get zip files for mini fair and links to the playgound bluep prints. 
-
+ 
 # Mini fair zip file 
 Zip files for mini fair 
 [mini-fair-v-0-1.zip](https://github.com/AmnestyAM/mini-fair-zip/blob/main/mini-fair-v-0-1.zip)     
