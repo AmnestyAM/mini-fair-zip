@@ -29,7 +29,10 @@
       "themeData": {
         "resource": "url",
         "url": "https://amnestyam.github.io/mini-fair-zip/fair-parent-theme-1.0.0.zip"
-      }
+      },
+			"options": {
+				"activate": true
+			}
     },
     {
       "step": "rm",
