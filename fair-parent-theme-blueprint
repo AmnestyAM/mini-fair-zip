@@ -1,0 +1,39 @@
+{
+  "landingPage": "/wp-admin/admin.php",
+  "login": true,
+  "features": {
+    "networking": true
+  },
+  "phpExtensionBundles": [
+    "kitchen-sink"
+  ],
+  "steps": [
+    {
+      "step": "defineWpConfigConsts",
+      "consts": {
+        "WP_DEBUG": true
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "query-monitor"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://github.com/fairpm/fair-parent-theme/archive/refs/tags/1.0.0.zip"
+      }
+    },
+    {
+      "step": "rm",
+      "path": "/wordpress/wp-content/plugins/hello.php"
+    }
+  ]
+}
