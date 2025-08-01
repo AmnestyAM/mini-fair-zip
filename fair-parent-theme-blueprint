@@ -1,5 +1,5 @@
 {
-  "landingPage": "/wp-admin/themes.php",
+  "landingPage": "/wp-admin/themes.php", 
   "login": true,
   "preferredVersions": {
     "php": "7.4",
