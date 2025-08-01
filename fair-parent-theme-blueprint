@@ -1,5 +1,5 @@
 {
-  "landingPage": "/wp-admin/admin.php",
+  "landingPage": "/wp-admin/",
   "login": true,
   "features": {
     "networking": true
@@ -15,6 +15,23 @@
       }
     },
     {
+      "step": "mkdir",
+      "path": "/tmp/fair-parent-theme"
+    },
+    {
+      "step": "unzip",
+      "extractToPath": "/tmp/fair-parent-theme",
+      "zipFile": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/AmnestyAM/mini-fair-zip/main/fair-parent-theme-1.0.0.zip"
+      }
+    },
+    {
+      "step": "mv",
+      "fromPath": "/tmp/fair-parent-theme/",
+      "toPath": "/wordpress/wp-content/themes/fair-parent-theme"
+    },
+    {
       "step": "installPlugin",
       "pluginData": {
         "resource": "wordpress.org/plugins",
@@ -23,16 +40,6 @@
       "options": {
         "activate": true
       }
-    },
-    {
-      "step": "installTheme",
-      "themeData": {
-        "resource": "url",
-        "url": "https://amnestyam.github.io/mini-fair-zip/fair-parent-theme-1.0.0.zip"
-      },
-			"options": {
-				"activate": true
-			}
     },
     {
       "step": "rm",
